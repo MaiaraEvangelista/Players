@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2? family = Titillium + Web: wght @ 400; 700 & display = swap');
+
+:root{
+    --background: #000000 ;
+    --bgnews: #1E1C21;
+    --red: #C20000;
+    --blue: #001F70;
+    --gradient: Linear-gradient( #000000  0%, rgba(83, 83, 83, 0.5774) 25%,rgba(196, 196, 196, 0) 87.5%);
+
+    --font:'Titillium Web', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 80px;
+    font-size: 16px;
+    background-color:var(--background);
+    font-family: var(--font);
+}
+img{
+    width: 100%;
+}
+
+.header-top{
+    width: 100%;
+    height: 90px;
+    /*background-color: yellow;*/
+}
+
+.content{
+    width: 100%;
+    max-width: 80em;
+    height: 100%;
+    /*background-color: aqua;*/
+    margin: auto;
+}
+
+.flex-spbt-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top img{
+    max-width: 21.18em;
+}
+
+.menu{
+    width: 100%;
+    max-width: 54em;
+}
+
+.menu ul{
+    list-style-type: none;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 1.10em 0.4em;
+    /*background-color: violet;*/
+}
+
+.menu a:hover{
+    background-color: var(--red);
+    text-decoration: underline;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner-container{
+    width: 100%;
+    height: 37.5em;
+    /*background-color: rgba(238, 130, 238, 0.479);*/
+    position: absolute;
+    top: 0;
+}
+
+.banner-content{
+    width: 90%;
+    height: 100%;
+    /*background-color: rgba(153, 205, 50, 0.411);*/
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner-text{
+    width: 60%;
+    height: 100%;
+    /*background-color: rgba(165, 42, 42, 0.397);*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+.banner-text h1{
+    font-size: 3.82em;
+    
+}
+
+.banner-text p{
+    font-size: 1.40em;
+    margin-top: 0.80em;
+}
+
+.banner-text a{
+    color: white;
+    font-size: 1.87em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--red);
+    padding: 0.5em 1.2em;
+    border-radius: 10px;
+    margin-top: 1.08em;
+}
+
+.games{
+    width: 100%;
+    height: 7.5em;
+    /*background-color: yellow;*/
+    padding-top: 1em;
+}
+.games ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2em 0em;
+    /*background-color: var(--red);*/
+    list-style-type: none;
+  
+}
+
+.games ul a:hover img{
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+.about{
+    width: 100%;
+    height: 31.25em;
+    background-color: var(--blue);
+    position: relative;
+}
+
+.about-angulation{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.angulation{
+    width: 100%;
+    height: 24.125em;
+    background-color: var(--background);
+   
+    transform: skewY(-3deg);
+}
+
+.container-about{
+    color: white;
+    position: absolute;
+    top: 0;
+}
+
+.content-about{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-about{
+    width: 50%;
+    text-align: justify;
+}
+
+.text-about h2{
+    margin-bottom: 1em;
+    font-size: 2.1875em;
+}
+
+.text-about p{
+    font-size: 1.25em;
+}
+
+.content-about img{
+    max-width: 31.875em;
+}
+
+.games-aovivo::after{
+    content: '';
+    border: solid 1px #ffffff;
+    height: 2.5em;
+    margin-left: 1em;
+}
+
+.games-aovivo, .games-embreve{
+    display: flex;
+    color: white;
+    align-items: center;
+    font-size: 1.875em;
+    justify-content: space-between;
+}
+
+.partida{
+    width: 9.5em;
+    display: flex;
+    align-items: center;
+    /*background-color: var(--red);*/
+    justify-content: space-between;
+    margin-left: 1em;
+}
+
+.time1, .time2{
+    display: flex;
+    align-items: center;
+}
+
+.partida img{
+    width: 1.8em;
+}
+
+.time1 img{ 
+    margin-left: 0.5em;
+}
+
+.time2 img{
+    margin-right: 0.5em;
+}
+
+/*Notícias*/
+.bg-news{
+    width: 100%;
+    height: 940px;
+    background-color: #1E1C21;
+}
+
+.news h2{
+    color: white;
+    margin: 1em 0em;
+    font-size: 2.1875em;
+}
+
+.news{
+    width: 70%;
+    height: 98%;
+    /*background-color: brown;*/
+}
+
+.next-games{
+    width: 25%;
+    height: 90%;
+   /* background-color: cadetblue;*/
+}
+
+.next-games h2{
+    color: white;
+    margin: 0.5em 1em;
+    font-size: 1.76em;
+    margin-bottom: 1em;
+}
+
+.content-news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardnews{
+    width: 16em;
+    height: 22.8em;
+    background-color: rgba(0, 0, 0, 0.664);
+    color: white;
+    margin-bottom: 1.5em;
+    box-shadow: 0px 0px 30px #888484d3;
+}
+
+.cardnews h3{
+    padding: 0.5em 0.8em;
+}
+
+.cardnews p{
+    padding: 0em 0.6em;
+}
+
+.next-games-bg{
+    width: 90%;
+    height: 790px;
+    background-color:rgba(19, 16, 16, 0.705);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.next-games-match{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+   /* background-color: yellow;*/
+}
+
+.teams{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.next-games-match p{
+    margin-top: 0.7em;
+    font-size: 20px;
+}
+
+.next-games-match div{
+    display: flex;
+    margin: auto;
+}
+
+.next-games-match img{
+    max-width: 2.8em;
+}
+
+.next-games-match > p{
+    margin-top: 1em;
+}
+
+/*até 1199px*/
+@media screen and (max-width: 74.93em){
+
+}
+
+/*até 991*/
+@media screen and (max-width: 61.93em){
+
+}
+
+/*até 767*/
+@media screen and (max-width:47.93em){
+    
+}
+
+/*até 576*/
+@media screen and (max-width: 36em){
+    
+}
+
